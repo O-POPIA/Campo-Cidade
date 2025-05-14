@@ -1,0 +1,243 @@
+/* Estilos Gerais para a Página de Conexão */
+
+.conexao-pagina {
+    padding: 20px;
+}
+
+.conexao-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.conexao-icone {
+    font-size: 3em;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.conexao-icone.grande {
+    font-size: 4em;
+}
+
+.conexao-titulo {
+    color: var(--cor-texto-principal);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.conexao-introducao {
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.conexao-conteudo {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conexao-conteudo h2 {
+    color: var(--cor-principal);
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.conexao-conteudo h3 {
+    color: var(--cor-texto-principal);
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.conexao-conteudo p {
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.conexao-conteudo ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.conexao-conteudo li {
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.conexao-conteudo article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.conexao-conteudo article:last-child {
+    border-bottom: none;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: var(--cor-principal);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--cor-principal);
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: var(--cor-principal);
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    padding: 13px 20px;
+    border: 1px solid var(--cor-principal);
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}

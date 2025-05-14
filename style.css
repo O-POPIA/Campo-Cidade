@@ -253,6 +253,10 @@ input[id="btn-3"]:checked ~ .slides .slide:nth-child(3) { opacity: 1; transform:
     text-align: center;
 }
 
+.galeria-container img{
+ width: 20%;
+}
+
 .destaques-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -326,7 +330,7 @@ input[id="btn-3"]:checked ~ .slides .slide:nth-child(3) { opacity: 1; transform:
 }
 
 .galeria-item img {
-    width: 100%;
+    width: 30%;
     height: auto;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -336,21 +340,96 @@ input[id="btn-3"]:checked ~ .slides .slide:nth-child(3) { opacity: 1; transform:
     transform: scale(1.1);
 }
 
-.ver-mais-galeria {
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.lightbox-container {
+    position: relative;
+    max-width: 60%; 
+    max-height: 60%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 5px;
+    object-fit: contain; 
+}
+.galeria-grid a {
     display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: var(--cor-principal);
+    text-decoration: none; 
+    border: none; 
+    outline: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.galeria-item img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 5px; 
+    
+    border: none;
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5em;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
-.ver-mais-galeria:hover {
-    background-color: #7A998A;
+.lightbox-close:hover {
+    opacity: 1;
 }
 
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    user-select: none;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: 1;
+}
 ul {
     margin: 0px;
     padding: 0px;
@@ -478,9 +557,8 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid var(--cor-principal);
     top: 0;
 }
 .subscribe-form button i {
