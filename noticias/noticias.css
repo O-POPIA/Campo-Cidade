@@ -1,6 +1,13 @@
-h1{
-    font-size: 32px;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
+/* Estilos personalizados para a página de notícias */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }

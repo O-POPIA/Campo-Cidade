@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores que Conectam - Festejando a Conexão Campo Cidade</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <link rel="stylesheet" href="./conexao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./conexao.css">
     <link rel="stylesheet" href="../style.css">
-    </head>
+</head>
+
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="justify-content: center;">
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./noticias.html">Notícias</a></li>
@@ -22,36 +25,67 @@
 
     <main class="conexao-pagina">
         <section class="conexao-header">
-            <i class="fas fa-utensils conexao-icone grande"></i>
-            <h1 class="conexao-titulo">Sabores que Conectam</h1>
-            <p class="conexao-introducao">Explore a deliciosa e fundamental ligação entre os ingredientes produzidos no campo e a rica gastronomia que encanta a cidade, celebrando os sabores autênticos da nossa terra.</p>
+            <div class="container text-center">
+                <i class="fas fa-utensils conexao-icone grande"></i>
+                <h1 class="conexao-titulo">Sabores que Conectam</h1>
+                <p class="conexao-introducao">Explore a deliciosa e fundamental ligação entre os ingredientes produzidos no campo e a rica gastronomia que encanta a cidade, celebrando os sabores autênticos da nossa terra.</p>
+            </div>
         </section>
 
         <section class="conexao-conteudo">
-            <article>
-                <h2>Do Campo à Mesa: Uma Jornada de Sabores</h2>
-                <p>Cada prato saboroso que apreciamos na cidade tem sua origem nos campos, no trabalho dedicado dos agricultores e na riqueza dos ingredientes naturais. A conexão entre o rural e o urbano se manifesta de forma vívida em nossa culinária...</p>
-            </article>
-
-            <article>
-                <h3>Ingredientes Regionais em Destaque</h3>
-                <ul>
-                    <li>Os sabores da mandioca: ...</li>
-                    <li>A doçura do mel local: ...</li>
-                    <li>A variedade de frutas da estação: ...</li>
-                    <li>...</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Receitas e Chefs que Valorizam a Conexão</h3>
-                <p>Conheça chefs e restaurantes da nossa região que valorizam os ingredientes frescos do campo, criando pratos que celebram a identidade local e a união entre o rural e o urbano na gastronomia...</p>
-                </article>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba954ed301a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ingredientes regionais do Paraná">
+                            <div class="card-body">
+                                <h3 class="card-title">Ingredientes Regionais</h3>
+                                <p class="card-text">O Paraná é rico em ingredientes locais como pinhão, mandioca e feijão preto, que formam a base de pratos típicos e são valorizados na gastronomia contemporânea, conectando o campo à mesa urbana.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Chefs valorizando ingredientes locais">
+                            <div class="card-body">
+                                <h3 class="card-title">Receitas e Chefs</h3>
+                                <p class="card-text">Chefs como Vania Krekniski, Manu Buffara e Gabriela Carvalho utilizam ingredientes locais do Paraná, criando pratos que celebram a identidade regional e fortalecem a conexão entre campo e cidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Turismo gastronômico no Paraná">
+                            <div class="card-body">
+                                <h3 class="card-title">Turismo Gastronômico</h3>
+                                <p class="card-text">O turismo gastronômico no Paraná permite aos visitantes experimentar a culinária local, conhecer produtores rurais e entender a importância da conexão entre campo e cidade para a cultura e economia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Turismo gastronômico no Paraná">
+                            <div class="card-body">
+                                <h3 class="card-title">Festivais e Eventos</h3>
+                                <p class="card-text">Os festivais gastronômicos no Paraná são verdadeiras celebrações da culinária local, reunindo produtores e consumidores. Eles oferecem uma oportunidade única para experimentar sabores autênticos e fortalecer os laços entre a comunidade rural e urbana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <article class="mb-5" style="list-style-type: none;padding-left: 0;transition: transform 0.3s ease, box-shadow 0.3s ease;border-radius: 8px;padding: 25px;margin-bottom: 30px;background-color: white;box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+            <h3>A Conexão entre Campo e Cidade na Gastronomia</h3>
+            <p>A gastronomia paranaense é uma celebração vibrante da conexão entre o campo e a cidade, onde ingredientes frescos cultivados por agricultores locais se transformam em pratos que encantam os paladares urbanos. Essa relação fortalece a economia rural e preserva a identidade cultural do estado.</p>
+            <p>Ingredientes como o pinhão, semente da araucária, a mandioca e o feijão preto, especialmente valorizado em eventos como a Festa Nacional do Feijão Preto em Prudentópolis, são pilares da culinária paranaense. Esses produtos, muitas vezes cultivados em pequenas propriedades rurais, chegam às cozinhas urbanas, onde chefs renomados os transformam em experiências gastronômicas únicas.</p>
+            <p>Chefs como Vania Krekniski, do Limoeiro Casa de Comidas, Manu Buffara e Gabriela Carvalho são exemplos de profissionais que buscam ingredientes diretamente de produtores locais. Eles exploram sabores como o palmito juçara do litoral, o porco Moura de Bituruna e a farinha de mandioca de Guaraqueçaba, criando pratos que refletem a riqueza do campo paranaense.</p>
+            <p>O turismo gastronômico, promovido por iniciativas como as da Secretaria do Turismo do Paraná, permite que visitantes vivenciem essa conexão ao visitar propriedades rurais, participar de festivais como o Mesa ao Vivo e degustar pratos típicos como barreado e carne de onça. Essas experiências não apenas valorizam a cultura local, mas também incentivam a sustentabilidade e o fortalecimento da agricultura familiar.</p>
+            <p>Em resumo, a gastronomia paranaense é uma ponte entre o campo e a cidade, promovendo a preservação cultural, o desenvolvimento econômico e uma alimentação mais saudável e autêntica.</p>
+        </article>
     </main>
 
-   
-    <footer class="footer-section">
+        <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row">
@@ -89,16 +123,20 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src='.././img/agrinho_500x1280-2-1024x400.jpg' class="img-fluid"
+                                <a href="index.html"><img src='./img/agrinho_500x1280-2-1024x400.jpg' class="img-fluid"
                                         alt="logo" style="border-radius: 90px;box-shadow: inset 2px 1px black;"></a>
                             </div>
                             <div class="footer-text">
-                                <p>O Agrinho, um programa de responsabilidade social do Sistema FAEP/SENAR-PR, atua desde 1995 em
-                                    todo o Paraná. Através de uma metodologia inovadora, o programa busca formar cidadãos
+                                <p>O Agrinho, um programa de responsabilidade social do Sistema FAEP/SENAR-PR, atua
+                                    desde 1995 em
+                                    todo o Paraná. Através de uma metodologia inovadora, o programa busca formar
+                                    cidadãos
                                     conscientes
-                                    e engajados no desenvolvimento sustentável, abordando temas como sustentabilidade, cidadania e
+                                    e engajados no desenvolvimento sustentável, abordando temas como sustentabilidade,
+                                    cidadania e
                                     saúde.
-                                    O Agrinho promove o debate sobre a interdependência entre o campo e a cidade, combatendo a visão
+                                    O Agrinho promove o debate sobre a interdependência entre o campo e a cidade,
+                                    combatendo a visão
                                     simplista de que são realidades antagônicas.</p>
                             </div>
                             <div class="footer-social-icon">
@@ -139,8 +177,17 @@
                             <div class="subscribe-form">
                                 <form action="#">
                                     <input type="text" placeholder="Endereço de Email">
-                                    <button style="background-color:#9ABFAA"><i class="fab fa-telegram-plane" ></i></button>
+                                    <button style="background-color:#9ABFAA"><i
+                                            class="fab fa-telegram-plane"></i></button>
                                 </form>
+                            </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="audio-player w-100">
+                                <audio controls class="w-100">
+                                    <source src="audio.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta o elemento de áudio.
+                                </audio>
                             </div>
                         </div>
                     </div>
@@ -168,6 +215,10 @@
                 </div>
             </div>
         </div>
-    <script src="script.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

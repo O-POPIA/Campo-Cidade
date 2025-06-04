@@ -7,13 +7,13 @@
     --cor-destaque: #FFB300; /* Amarelo para destaques */
 }
 
-.conexao-pagina {
+.valorizacao-pagina {
     padding: 40px 20px;
     background-color: var(--cor-fundo-claro);
     min-height: 100vh;
 }
 
-.conexao-header {
+.valorizacao-header {
     padding: 60px 20px;
     background: linear-gradient(135deg, var(--cor-principal) 0%, var(--cor-secundaria) 100%);
     border-radius: 12px;
@@ -22,18 +22,18 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.conexao-icone {
+.valorizacao-icone {
     font-size: 4.5em;
     color: var(--cor-destaque);
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.conexao-icone.grande {
+.valorizacao-icone.grande {
     font-size: 6em;
 }
 
-.conexao-titulo {
+.valorizacao-titulo {
     color: white;
     font-size: 2.5rem;
     font-weight: 700;
@@ -42,7 +42,7 @@
     letter-spacing: 1px;
 }
 
-.conexao-introducao {
+.valorizacao-introducao {
     color: #E0E0E0;
     font-size: 1.2rem;
     line-height: 1.8;
@@ -50,44 +50,44 @@
     margin: 0 auto;
 }
 
-.conexao-conteudo {
+.valorizacao-conteudo {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
 }
 
-.conexao-conteudo .card {
+.valorizacao-conteudo .card {
     background-color: white;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.conexao-conteudo .card:hover {
+.valorizacao-conteudo .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.conexao-conteudo .card-img-top {
+.valorizacao-conteudo .card-img-top {
     height: 200px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.conexao-conteudo .card-title {
+.valorizacao-conteudo .card-title {
     color: var(--cor-texto-principal);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.conexao-conteudo .card-text {
+.valorizacao-conteudo .card-text {
     color: var(--cor-texto-secundario);
     font-size: 1rem;
     line-height: 1.7;
 }
 
-.conexao-conteudo .list-group-item {
+.valorizacao-conteudo .list-group-item {
     background-color: transparent;
     border: none;
     color: var(--cor-texto-secundario);
@@ -95,20 +95,20 @@
     padding: 10px 0;
 }
 
-.conexao-cta {
+.valorizacao-cta {
     background-color: var(--cor-secundaria);
     color: white;
     border-radius: 12px;
     margin-top: 40px;
 }
 
-.conexao-cta h2 {
+.valorizacao-cta h2 {
     color: white;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.conexao-cta .btn-primary {
+.valorizacao-cta .btn-primary {
     background-color: var(--cor-destaque);
     border-color: var(--cor-destaque);
     padding: 12px 30px;
@@ -117,12 +117,15 @@
     transition: background-color 0.3s ease;
 }
 
-.conexao-cta .btn-primary:hover {
+.valorizacao-cta .btn-primary:hover {
     background-color: #FFA000;
     border-color: #FFA000;
 }
 
-article:hover {transform: translateY(-5px);box-shadow: 0 10px 25px rgba(0,0,0,0.1);}
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
 /* Maintain existing footer styles */
 .footer-section {
