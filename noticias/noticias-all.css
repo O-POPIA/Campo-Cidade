@@ -1,0 +1,40 @@
+/* Estilos para a página de listagem de notícias */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para as páginas individuais de notícias */
+.noticia-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+}
+
+.noticia-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #9ABFAA;
+    border-color: #9ABFAA;
+}
+
+.btn-primary:hover {
+    background-color: #7a9e85;
+    border-color: #7a9e85;
+}
