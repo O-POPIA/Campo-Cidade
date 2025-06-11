@@ -10,6 +10,9 @@
         crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -26,138 +29,180 @@
             </nav>
         </header>
 
-        <span style="min-height: 30px;"></span>
-        <div class="slider-container">
-            <div class="slider">
-                <input type="radio" name="toggle" id="btn-1" checked>
-                <input type="radio" name="toggle" id="btn-2">
-                <input type="radio" name="toggle" id="btn-3">
+        <span id="Home" style="min-height: 30px;"></span>
 
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-                </div>
+        <body>
+            <div class="container my-5">
+                <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
 
-                <ul class="slides">
-                    <li class="slide">
-                        <div class="slide-content">
-                            <h2 class="slide-title">Agrinho do Paraná tem alcance e referência nacional</h2>
-                            <p class="slide-text">O programa Agrinho do Paraná é reconhecido nacionalmente por seu impacto em
-                            cidadania e sustentabilidade, com mais de 1,3 milhão de participantes na edição de 2024.</p>
-                            <a href="./noticias/noticia-6.html" class="slide-link">Saiba Mais</a>
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mx-auto" class="item-news">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="./img/Imagem do WhatsApp de 2025-06-07 à(s) 20.34.26_440d2bb7.jpg"
+                                            class="img-fluid rounded-start" alt="Notícia 1">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Agrinho do Paraná tem alcance e referência nacional
+                                            </h5>
+                                            <p class="card-text">O programa Agrinho do Paraná é reconhecido
+                                                nacionalmente por seu impacto em
+                                                cidadania e sustentabilidade, com mais de 1,3 milhão de participantes na
+                                                edição de 2024.</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
-                        <p class="slide-image">
-                            <img src="./img/Imagem do WhatsApp de 2025-06-07 à(s) 20.34.26_440d2bb7.jpg" alt="" width="320" height="240">
-                        </p>
-                    </li>
-                    <li class="slide">
-                        <div class="slide-content">
-                            <h2 class="slide-title">Exporio 2025 terá três dias de festa com shows e rodeio gratuitos
-                            </h2>
-                            <p class="slide-text">Vai ter rodeio country, exposição do comércio com mais de 50 empresas,
-                                praça de alimentação, parque e show infantil, e três shows sertanejos. </p>
-                            <a href="#" class="slide-link">Saiba Mais</a>
+                        <div class="carousel-item">
+                            <div class="card mx-auto" class="item-news">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="./img/Fag.jpg" class="img-fluid rounded-start" alt="Notícia 2">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">City Farm FAG em Cascavel entra no calendário oficial
+                                                de eventos do Paraná</h5>
+                                            <p class="card-text">A City Farm FAG, em Cascavel, foi incluída no
+                                                calendário oficial do Paraná, celebrando a conexão campo-cidade com
+                                                exposições, palestras e atividades do Agrinho.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="slide-image">
-                            <img src="./img/1745839391IMG_0194.jpg" alt="Exporio 2025" width="320" height="240">
-                        </p>
-                    </li>
-                    <li class="slide">
-                        <div class="slide-content">
-                            <h2 class="slide-title">Porto de Paranaguá receberá maior desembarque de fertilizantes de
-                                sua história</h2>
-                            <p class="slide-text">Navio Tai Knighthood descarregará 78.325 toneladas do produto</p>
-                            <a href="#" class="slide-link">Saiba Mais</a>
+                        <div class="carousel-item">
+                            <div class="card mx-auto" class="item-news">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="img/Positivo.jpg" class="img-fluid rounded-start" alt="Notícia 3">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Expo Índia-Brasil traz arte, cultura, moda e
+                                                gastronomia para Curitiba</h5>
+                                            <p class="card-text">A Expo Índia-Brasil 2024, em Curitiba, reuniu 100
+                                                expositores, celebrando a conexão campo-cidade com artesanato,
+                                                gastronomia indiana etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="slide-image">
-                            <img src="./img/A-Historia-do-Porto-de-Paranagua.jpg" alt="Porto de Paranaguá" width="320"
-                                height="240">
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                    </div>
 
-        <section class="conexoes-destaque">
-            <h2 class="titulos-gerais">Conexões em Destaque</h2>
-            <div class="destaques-grid">
-                <div class="destaque">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Educação e Conscientização</h3>
-                    <p>Explore as iniciativas educativas do Agrinho que promovem a compreensão da interdependência
-                        campo-cidade.</p>
-                    <a href="./conexões/conexao-1.html">Saiba Mais</a>
-                </div>
-                <div class="destaque">
-                    <i class="fas fa-tractor"></i>
-                    <h3>Valorização do Produtor Rural</h3>
-                    <p>Conheça toda a importância do trabalho dos produtores rurais para a nossa sociedade e economia.
-                    </p>
-                    <a href="./conexões/conexao-2.html">Saiba Mais</a>
-                </div>
-                <div class="destaque">
-                    <i class="fas fa-tree"></i>
-                    <h3>Sustentabilidade e Meio Ambiente</h3>
-                    <p>Descubra como a conexão campo-cidade pode impulsionar práticas mais sustentáveis.</p>
-                    <a href="./conexões/conexao-3.html">Saiba Mais</a>
-                </div>
-                <div class="destaque">
-                    <i class="fas fa-music"></i>
-                    <h3>Cultura e Tradição Local</h3>
-                    <p>Celebre as ricas tradições culturais que emanam do campo e influenciam a vida urbana.</p>
-                    <a href="./conexões/conexao-4.html">Saiba Mais</a>
-                </div>
-                <div class="destaque">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Colaboração e Parcerias</h3>
-                    <p>Explore exemplos de projetos e parcerias bem-sucedidas entre o setor rural e o urbano na nossa
-                        região.</p>
-                    <a href="./conexões/conexao-5.html">Saiba Mais</a>
-                </div>
-                <div class="destaque">
-                    <i class="fas fa-city"></i>
-                    <h3>O Campo na Cidade</h3>
-                    <p>Descubra como elementos do campo se manifestam no ambiente urbano, enriquecendo a vida nas
-                        cidades.</p>
-                    <a href="./conexões/conexao-6.html">Saiba Mais</a>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
                 </div>
             </div>
-        </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+            <section class="conexoes-destaque" id="conexoes">
+                <h2 class="titulos-gerais">Conexões em Destaque</h2>
+                <div class="destaques-grid">
+                    <div class="destaque">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Educação e Conscientização</h3>
+                        <p>Explore as iniciativas educativas do Agrinho que promovem a compreensão da interdependência
+                            campo-cidade.</p>
+                        <a href="./conexões/conexao-1.html">Saiba Mais</a>
+                    </div>
+                    <div class="destaque">
+                        <i class="fas fa-tractor"></i>
+                        <h3>Valorização do Produtor Rural</h3>
+                        <p>Conheça toda a importância do trabalho dos produtores rurais para a nossa sociedade e
+                            economia.
+                        </p>
+                        <a href="./conexões/conexao-2.html">Saiba Mais</a>
+                    </div>
+                    <div class="destaque">
+                        <i class="fas fa-tree"></i>
+                        <h3>Sustentabilidade e Meio Ambiente</h3>
+                        <p>Descubra como a conexão campo-cidade pode impulsionar práticas mais sustentáveis.</p>
+                        <a href="./conexões/conexao-3.html">Saiba Mais</a>
+                    </div>
+                    <div class="destaque">
+                        <i class="fas fa-music"></i>
+                        <h3>Cultura e Tradição Local</h3>
+                        <p>Celebre as ricas tradições culturais que emanam do campo e influenciam a vida urbana.</p>
+                        <a href="./conexões/conexao-4.html">Saiba Mais</a>
+                    </div>
+                    <div class="destaque">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Colaboração e Parcerias</h3>
+                        <p>Explore exemplos de projetos e parcerias bem-sucedidas entre o setor rural e o urbano na
+                            nossa
+                            região.</p>
+                        <a href="./conexões/conexao-5.html">Saiba Mais</a>
+                    </div>
+                    <div class="destaque">
+                        <i class="fas fa-city"></i>
+                        <h3>O Campo na Cidade</h3>
+                        <p>Descubra como elementos do campo se manifestam no ambiente urbano, enriquecendo a vida nas
+                            cidades.</p>
+                        <a href="./conexões/conexao-6.html">Saiba Mais</a>
+                    </div>
+                </div>
+            </section>
     </section>
 
     <h2 class="titulos-gerais">Galeria</h2>
 
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img src="./img/HQ-1.png" style="width: 250px;" alt="">
         </button>
 
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./img/HQ-1.png" style="width: 250px;" alt="">
+            <img src="./img/Fag.jpg" style="width: 250px; max-height: 200px;" alt="">
         </button>
 
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./img/HQ-1.png" style="width: 250px;" alt="">
+            <img src="./img/UFPR.jpg" style="width: 250px; max-height: 200px;" alt="">
         </button>
 
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./img/HQ-1.png" style="width: 250px;" alt="">
+            <img src="./img/mato-1.jpg" style="width: 250px;"  alt="">
         </button>
         <span></span>
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./img/HQ-1.png" style="width: 250px;" alt="">
+            <img src="./img/mato-2.jpg" style="width: 250px;"  alt="">
         </button>
-
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./img/HQ-1.png" style="width: 250px;" alt="">
+            <img src="./img/ExpoTrade.jpg" style="width: 250px;"  alt="">
         </button>
+    
     </section>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -165,40 +210,44 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="img/HQ-1.png" target="_blank">Ver em nova guia</a>
+                    <a href="img/HQ-1.png" class="btn btn-secondary" target="_blank">Ver em nova guia</a>
                 </div>
             </div>
         </div>
     </div>
-<section class="depoimentos py-5">
-            <div class="container">
-                <h1 class="depoimentos__title text-center mb-5">Depoimentos</h1>
-                <div class="row g-4">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card depoimento h-100">
-                            <div class="card-body text-center">
-                                <img src="http://via.placeholder.com/80x80?text=Pessoa+1" alt="Depoente 1" class="rounded-circle mb-3">
-                                <blockquote class="blockquote mb-2">"O agro-negócio hoje é fundamental para a economia paranense e tentar prejudicar esse ramo é dar um tiro no próprio pé."</blockquote>
-                                <cite class="d-block">Murilo Morelli - Estudante</cite>
-                            </div>
+    <section class="depoimentos py-5">
+        <div class="container">
+            <h1 class="depoimentos__title text-center mb-5">Depoimentos</h1>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card depoimento h-100">
+                        <div class="card-body text-center">
+                            <img src="http://via.placeholder.com/80x80?text=Pessoa+1" alt="Depoente 1"
+                                class="rounded-circle mb-3">
+                            <blockquote class="blockquote mb-2">"O agro-negócio hoje é fundamental para a economia
+                                paranense e tentar prejudicar esse ramo é dar um tiro no próprio pé."</blockquote>
+                            <cite class="d-block">Murilo Morelli - Estudante</cite>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card depoimento h-100">
-                            <div class="card-body text-center">
-                                <img src="http://via.placeholder.com/80x80?text=Pessoa+2" alt="Depoente 2" class="rounded-circle mb-3">
-                                <blockquote class="blockquote mb-2">"Ver a valorização dos nossos produtos na cidade através do Agrinho é muito gratificante."</blockquote>
-                                <cite class="d-block">Maria Oliveira - Produtora Rural</cite>
-                            </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card depoimento h-100">
+                        <div class="card-body text-center">
+                            <img src="http://via.placeholder.com/80x80?text=Pessoa+2" alt="Depoente 2"
+                                class="rounded-circle mb-3">
+                            <blockquote class="blockquote mb-2">"Ver a valorização dos nossos produtos na cidade através
+                                do Agrinho é muito gratificante."</blockquote>
+                            <cite class="d-block">Maria Oliveira - Produtora Rural</cite>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
-                <div class="row">
+                <div class="row" id="Contato">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
@@ -263,16 +312,16 @@
                                 <h3>Links Úteis</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Educação</a></li>
-                                <li><a href="#">Valorização</a></li>
-                                <li><a href="#">Sustentabilidade</a></li>
-                                <li><a href="#">Cultura</a></li>
-                                <li><a href="#">Colaboração</a></li>
-                                <li><a href="#">Campo na Cidade</a></li>
-                                <li><a href="#">Entrevistas</a></li>
-                                <li><a href="#">Contato</a></li>
-                                <li><a href="#">Últimas Notícias</a></li>
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#conexoes">Educação</a></li>
+                                <li><a href="#conexoes">Valorização</a></li>
+                                <li><a href="#conexoes">Sustentabilidade</a></li>
+                                <li><a href="#conexoes">Cultura</a></li>
+                                <li><a href="#conexoes">Colaboração</a></li>
+                                <li><a href="#conexoes">Campo na Cidade</a></li>
+                                <li><a href="#conexoes">Entrevistas</a></li>
+                                <li><a href="#Contato">Contato</a></li>
+                                <li><a href="#Home">Últimas Notícias</a></li>
                             </ul>
                         </div>
                     </div>
@@ -315,10 +364,10 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Noticias</a></li>
-                                <li><a href="#">Galeria</a></li>
-                                <li><a href="#">Contato</a></li>
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#Home">Noticias</a></li>
+                                <li><a href="#galeria">Galeria</a></li>
+                                <li><a href="#Contato">Contato</a></li>
                             </ul>
                         </div>
                     </div>

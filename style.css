@@ -149,126 +149,24 @@ body {
 }
 
 /* Slider de Notícias */
-.slider {
-    position: relative;
-    width: 90%;
-    max-width: 960px;
-    height: 300px;
-    margin: 50px auto 20px auto;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-        0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-.slider-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 150px;
-    text-align: center;
-    transform: translateX(-50%);
-    z-index: 1000;
-}
-
-.slider input[type="radio"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider-controls label {
-    display: inline-block;
-    border: none;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #212121;
-    transition: background-color 0.2s linear;
-    margin: 0 5px;
-}
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background-color: var(--cor-principal);
-}
-
-.slides {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-
-}
-
-.slide {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    background-color: white;
-}
-
-input[id="btn-1"]:checked ~ .slides { transform: translateX(0%); }
-input[id="btn-2"]:checked ~ .slides { transform: translateX(-100%); }
-input[id="btn-3"]:checked ~ .slides { transform: translateX(-200%); }
-
-input[id="btn-1"]:checked ~ .slides .slide:nth-child(1) { opacity: 1; transform: translateX(0%); }
-input[id="btn-2"]:checked ~ .slides .slide:nth-child(2) { opacity: 1; transform: translateX(0%); }
-input[id="btn-3"]:checked ~ .slides .slide:nth-child(3) { opacity: 1; transform: translateX(0%); }
-
-.slide-content {
-    width: 50%;
-    padding-right: 20px;
-}
-
-.slide-title {
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: var(--cor-texto-principal);
-}
-
-.slide-text {
-    margin-bottom: 15px;
-    color: var(--cor-texto-secundario);
-}
-
-.slide-link {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: var(--cor-principal);
-    transition: background-color 0.3s ease;
-}
-
-.slide-link:hover {
-    background-color: #7A998A;
-}
-
-.slide-image {
-    width: 50%;
-    text-align: right;
-}
-
-.slide-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: var(--cor-principal); /* Cinza escuro para as flechas */
+        }
+        .carousel-indicators [data-bs-target] {
+            background-color: var(--cor-principal); /* Cinza escuro para os indicadores */
+        }
+        .carousel-item img {
+            max-height: 300px; /* Limite de altura para as imagens */
+            object-fit: cover; /* Mantém a proporção e cobre o espaço */
+            width: 100%; /* Garante que a imagem ocupe a largura disponível */
+        }
+        @media (min-width: 790px) {
+            .carousel-item .card {
+                max-height: 400px; /* Limite de altura do slide em telas maiores que 790px */
+                overflow: hidden; /* Garante que o conteúdo não ultrapasse o limite */
+            }
+        }
 /* Conexões em Destaque (Serviços) */
 .conexoes-destaque {
     padding: 40px 20px;
@@ -373,6 +271,8 @@ input[id="btn-3"]:checked ~ .slides .slide:nth-child(3) { opacity: 1; transform:
     line-height: 1.6;
     font-style: italic;
 }
+
+
 
 .depoimento cite {
     font-size: calc(var(--base-grid) * 1.8);
@@ -612,3 +512,4 @@ ul {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+

@@ -3,64 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Circular</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./conexoes.css">
+    <title>Conexões - Agrinho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root {
+            --cor-principal: #86BF84;
+            --cor-texto-principal: #333;
+            --cor-texto-secundario: #666;
+            --cor-fundo-claro: #f9f9f9;
+            --fonte-principal: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--fonte-principal);
+            color: var(--cor-texto-principal);
+            background-color: var(--cor-fundo-claro);
+            line-height: 1.6;
+        }
+
+        .conexoes-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .titulos-gerais {
+            color: var(--cor-principal);
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+
+        .accordion-button {
+            background-color: white;
+            color: var(--cor-texto-principal);
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--cor-principal);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border: none;
+        }
+
+        .accordion-button i {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: var(--cor-principal);
+        }
+
+        .accordion-button:not(.collapsed) i {
+            color: white;
+        }
+
+        .accordion-body {
+            background-color: white;
+            border-radius: 0 0 8px 8px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-body p {
+            color: var(--cor-texto-secundario);
+            margin-bottom: 20px;
+        }
+
+        .accordion-body .btn {
+            background-color: var(--cor-principal);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-body .btn:hover {
+            background-color: #7A998A;
+        }
+
+        @media (max-width: 768px) {
+            .titulos-gerais {
+                font-size: 2rem;
+            }
+
+            .accordion-button {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+
+            .accordion-button i {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .conexoes-section {
+                padding: 40px 15px;
+            }
+
+            .accordion-button {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="justify-content: center;" id="Nav">
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../noticias/noticias.html">Notícias</a></li>
-                <li><a href="./conexões/conexoes.html" class="active">Conexões</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="./conexoes.html" class="active">Conexões</a></li>
+                <li><a href="../suporte.html">Suporte</a></li>
             </ul>
         </nav>
     </header>
-    <h1 class="links__title">Conexões</h1>
-    <main>
-        <div class="links">
-            <ul class="links__list">
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-1.html">
-                        <i class="fas fa-graduation-cap links__icon"></i>
-                        <span class="links__text">Educação</span>
-                    </a>
-                </li>
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-2.html">
-                        <i class="fas fa-tractor links__icon"></i>
-                        <span class="links__text">Valorização</span>
-                    </a>
-                </li>
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-3.html">
-                        <i class="fas fa-tree links__icon"></i>
-                        <span class="links__text">Preservação</span>
-                    </a>
-                </li>
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-4.html">
-                        <i class="fas fa-utensils links__icon"></i>
-                        <span class="links__text">Sabores</span>
-                    </a>
-                </li>
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-5.html">
-                        <i class="fas fa-handshake links__icon"></i>
-                        <span class="links__text">Colaboração</span>
-                    </a>
-                </li>
-                <li class="links__item">
-                    <a class="links__link" href="./conexao-6.html">
-                        <i class="fas fa-city links__icon"></i>
-                        <span class="links__text">Interação</span>
-                    </a>
-                </li>
-            </ul>
+
+    <section class="conexoes-section">
+        <h2 class="titulos-gerais">Conexões</h2>
+        <div class="container">
+            <div class="accordion" id="conexoesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="fas fa-graduation-cap"></i> Educação e Conscientização
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Explore as iniciativas educativas do Agrinho que promovem uma compreensão profunda da essencial interdependência entre o campo e a cidade, unindo saberes para um futuro sustentável.</p>
+                            <a href="./conexao-1.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-tractor"></i> Valorização do Produtor Rural
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Descubra como o trabalho incansável dos produtores rurais sustenta nossa sociedade e economia, e conheça as iniciativas que celebram e apoiam seu papel essencial na conexão campo-cidade.</p>
+                            <a href="./conexao-2.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-tree"></i> Sustentabilidade e Meio Ambiente
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Descubra como a intrínseca conexão entre o campo e a cidade pode se tornar a força motriz para a adoção de práticas mais sustentáveis, a preservação do meio ambiente e a construção de um futuro mais verde.</p>
+                            <a href="./conexao-3.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="fas fa-utensils"></i> Sabores que Conectam
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Explore a deliciosa e fundamental ligação entre os ingredientes produzidos no campo e a rica gastronomia que encanta a cidade, celebrando os sabores autênticos da nossa terra.</p>
+                            <a href="./conexao-4.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="fas fa-handshake"></i> Colaboração e Parcerias
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Explore exemplos inspiradores de projetos e parcerias bem-sucedidas que florescem na nossa região, unindo o setor rural e o ambiente urbano em iniciativas inovadoras e de benefício mútuo.</p>
+                            <a href="./conexao-5.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="fas fa-city"></i> O Campo na Cidade
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#conexoesAccordion">
+                        <div class="accordion-body">
+                            <p>Descubra as diversas maneiras pelas quais elementos do ambiente rural se manifestam e enriquecem a vida no espaço urbano, criando laços surpreendentes e fortalecendo nossa conexão com a natureza.</p>
+                            <a href="./conexao-6.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+     <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row" id="Contato">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Local</h4>
+                                <span>Rua Marechal Deodoro, 450 – 12º andar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Telefone</h4>
+                                <span>(41) 99678-9201</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Email</h4>
+                                <span>senarpr@senarpr.org.br</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="../index.html"><img src='../img/agrinho_500x1280-2-1024x400.jpg' class="img-fluid"
+                                        alt="Seu navegador não suporta a imagem." style="border-radius: 90px;box-shadow: inset 2px 1px black;"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>O Agrinho, um programa de responsabilidade social do Sistema FAEP/SENAR-PR, atua
+                                    desde 1995 em
+                                    todo o Paraná. Através de uma metodologia inovadora, o programa busca formar
+                                    cidadãos
+                                    conscientes
+                                    e engajados no desenvolvimento sustentável, abordando temas como sustentabilidade,
+                                    cidadania e
+                                    saúde.
+                                    O Agrinho promove o debate sobre a interdependência entre o campo e a cidade,
+                                    combatendo a visão
+                                    simplista de que são realidades antagônicas.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Links Úteis</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#Nav">Home</a></li>
+                                <li><a href="#conexoes">Educação</a></li>
+                                <li><a href="#conexoes">Valorização</a></li>
+                                <li><a href="#conexoes">Sustentabilidade</a></li>
+                                <li><a href="#conexoes">Cultura</a></li>
+                                <li><a href="#conexoes">Colaboração</a></li>
+                                <li><a href="#conexoes">Campo na Cidade</a></li>
+                                <li><a href="#conexoes">Entrevistas</a></li>
+                                <li><a href="#Contato">Contato</a></li>
+                                <li><a href="#Nav">Últimas Notícias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Inscreva-se</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Não esqueça de se inscrever para receber noticias mais recentes.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Endereço de Email">
+                                    <button style="background-color:#9ABFAA"><i
+                                            class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="audio-player w-100">
+                                <audio controls class="w-100">
+                                    <source src="../sons/Piano-Agrinho.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta o elemento de áudio.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Agrinho &copy; 2025, Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#Nav">Home</a></li>
+                                <li><a href="#Nav">Noticias</a></li>
+                                <li><a href="#conexoes">Conexões</a></li>
+                                <li><a href="#Nav">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
