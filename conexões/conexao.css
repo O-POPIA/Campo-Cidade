@@ -42,6 +42,14 @@
     letter-spacing: 1px;
 }
 
+@media(max-width:500px){
+    .conexao-titulo{
+        font-size: 1.25rem;
+    }
+}
+
+
+
 .conexao-introducao {
     color: #E0E0E0;
     font-size: 1.2rem;

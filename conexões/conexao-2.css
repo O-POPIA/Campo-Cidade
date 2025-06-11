@@ -41,6 +41,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+@media(max-width:500px){
+    .valorizacao-titulo{
+        font-size: 1.25rem;
+    }
+}
 
 .valorizacao-introducao {
     color: #E0E0E0;
