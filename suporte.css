@@ -10,10 +10,7 @@
 }
 
 *,
-:after,
-:before {
-    box-sizing: border-box;
-}
+
 
 html {
     margin: 0;
@@ -30,68 +27,6 @@ body {
     min-height: 100vh;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #333;
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-}
-
-.menu li {
-    display: inline;
-    margin: 0 20px;
-    position: relative;
-}
-
-.menu a {
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    position: relative;
-}
-
-.menu a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -5px;
-    height: 2px;
-    background-color: var(--cor-principal);
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu a:hover::before {
-    transform: scaleX(1);
-}
-
-.menu a::after {
-    content: '▲';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%) scaleY(0);
-    color: var(--cor-principal);
-    transition: transform 0.3s ease-in-out;
-    font-size: 1.5em;
-}
-
-.menu a.active::after {
-    transform: translateX(-50%) scaleY(1);
-}
 
 /* Suporte Section Styles */
 main {
@@ -312,77 +247,6 @@ main {
     padding: calc(var(--base-grid) * 1.5);
 }
 
-/* Responsive Navbar */
-@media (max-width: 768px) {
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .menu li {
-        display: block;
-        margin: 0;
-    }
-
-    .menu a {
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* Responsive Suporte Section */
-@media (max-width: 768px) {
-    .suporte__content {
-        flex-direction: column;
-        gap: calc(var(--base-grid) * 2);
-    }
-
-    .suporte__form,
-    .suporte__faq {
-        min-width: 100%;
-    }
-
-    .suporte__title {
-        font-size: calc(var(--base-grid) * 3);
-    }
-
-    .suporte__form h2,
-    .suporte__faq h2 {
-        font-size: calc(var(--base-grid) * 2.5);
-    }
-
-    .faq-question {
-        font-size: calc(var(--base-grid) * 1.8);
-    }
-
-    .faq-answer {
-        font-size: calc(var(--base-grid) * 1.6);
-    }
-}
-
-@media (max-width: 480px) {
-    .suporte {
-        padding: 10px;
-    }
-
-    .support-btn {
-        padding: calc(var(--base-grid) * 1) calc(var(--base-grid) * 2);
-        font-size: calc(var(--base-grid) * 1.8);
-    }
-
-    .form-container {
-        padding: calc(var(--base-grid) * 2);
-    }
-
-    .faq-answer {
-        max-height: 300px; /* Ajuste para telas menores */
-    }
-}
 
 .cta-text h4 {
   color: var(--cor-principal);}
